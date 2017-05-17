@@ -15,7 +15,7 @@ CREATE TABLE Category
     Category_name      VARCHAR2 (60) NOT NULL ,
     CATEGORY_SHORT_DSC VARCHAR2 (500) ,
     CATEGORY_DSC       VARCHAR2 (2000) ,
-    BANNER_IMG         VARCHAR2 (100)
+    BANNER_IMG         VARCHAR2 (100) 
   ) ;
 ALTER TABLE Category ADD CONSTRAINT Category_PK PRIMARY KEY ( Category_id ) ;
 
@@ -35,9 +35,10 @@ CREATE TABLE "Resource"
     Resource_id     NUMBER NOT NULL ,
     Resource_name   VARCHAR2 (80) NOT NULL ,
     Resource_access VARCHAR2 (1) ,
+    SOURCE          NUMBER(1), --0 = 'On Site'  1 = 'External'  
     resource_views  NUMBER ,
     Category_id     NUMBER NOT NULL ,
-    Type_id         NUMBER NOT NULL
+    Type_id         NUMBER NOT NULL 
   ) ;
 ALTER TABLE "Resource" ADD CONSTRAINT Resource_PK PRIMARY KEY ( Resource_id ) ;
 
