@@ -13,8 +13,8 @@ CREATE TABLE Category
   (
     Category_id        NUMBER NOT NULL ,
     Category_name      VARCHAR2 (60) NOT NULL ,
-    CATEGORY_SHORT_DSC VARCHAR2 (500) ,
-    CATEGORY_DSC       VARCHAR2 (2000) ,
+    CATEGORY_SHORT_DSC VARCHAR2 (1000) ,
+    CATEGORY_DSC       VARCHAR2 (5000) ,
     BANNER_IMG         VARCHAR2 (100) 
   ) ;
 ALTER TABLE Category ADD CONSTRAINT Category_PK PRIMARY KEY ( Category_id ) ;
