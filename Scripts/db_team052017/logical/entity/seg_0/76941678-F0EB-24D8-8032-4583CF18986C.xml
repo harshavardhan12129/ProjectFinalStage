@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="76941678-F0EB-24D8-8032-4583CF18986C" name="Resource">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 05:44:36 UTC</createdTime>
+<ownerDesignName>db_team052017</ownerDesignName>
+<engineerTo>
+<item key="9116FB5A-4AE5-A27E-DB27-736ACC2D537E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Resource_id" id="24EEFF36-B89A-D1A2-0168-835AF21B3A21">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 05:44:45 UTC</createdTime>
+<ownerDesignName>db_team052017</ownerDesignName>
+<engineerTo>
+<item key="9116FB5A-4AE5-A27E-DB27-736ACC2D537E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Resource_name" id="FEBA23BE-8B7A-3255-1781-4FCE05799FAB">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 05:45:11 UTC</createdTime>
+<ownerDesignName>db_team052017</ownerDesignName>
+<engineerTo>
+<item key="9116FB5A-4AE5-A27E-DB27-736ACC2D537E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Resource_access" id="878C40CD-A752-97A7-9C6A-5B7C933A7C5A">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 05:45:24 UTC</createdTime>
+<ownerDesignName>db_team052017</ownerDesignName>
+<engineerTo>
+<item key="9116FB5A-4AE5-A27E-DB27-736ACC2D537E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resource_views" id="51361771-3FE1-E8C0-4EBB-AA9235093AEE">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:18:39 UTC</createdTime>
+<ownerDesignName>db_team052017</ownerDesignName>
+<engineerTo>
+<item key="9116FB5A-4AE5-A27E-DB27-736ACC2D537E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Category_id" id="AF023555-564B-C673-9FF0-9E6FB883A76F">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:11:51 UTC</createdTime>
+<generatorID>B57E2065-E0AF-B016-8EB2-E48C516C0E78</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<engineerTo>
+<item key="9116FB5A-4AE5-A27E-DB27-736ACC2D537E" value="true"/>
+</engineerTo>
+<referedAttribute>FC972AE4-4783-643E-B23A-0B788302F8EB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Type_id" id="3E7CF1E4-CC91-391C-B021-A13B277D2011">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:14:27 UTC</createdTime>
+<generatorID>87F058EF-2C62-5196-92ED-6926CE3497FB</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<engineerTo>
+<item key="9116FB5A-4AE5-A27E-DB27-736ACC2D537E" value="true"/>
+</engineerTo>
+<referedAttribute>33C87EAD-0DE1-3B00-B679-7AA27B6DAEDC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="39119E7D-B876-0FE8-8E7C-0CF4E5D91C5E" name="Resource PK">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:05:47 UTC</createdTime>
+<ownerDesignName>db_team052017</ownerDesignName>
+<engineerTo>
+<item key="9116FB5A-4AE5-A27E-DB27-736ACC2D537E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>24EEFF36-B89A-D1A2-0168-835AF21B3A21</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

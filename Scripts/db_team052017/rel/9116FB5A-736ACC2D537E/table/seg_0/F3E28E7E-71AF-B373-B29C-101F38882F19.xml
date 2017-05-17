@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F3E28E7E-71AF-B373-B29C-101F38882F19" name="Resource">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>76941678-F0EB-24D8-8032-4583CF18986C</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Resource_id" id="D60B7C13-B8F1-3529-73B4-044893729027">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>24EEFF36-B89A-D1A2-0168-835AF21B3A21</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resource_name" id="7893CBEC-7DF6-247A-00C0-6F93ABBC39E2">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>FEBA23BE-8B7A-3255-1781-4FCE05799FAB</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resource_access" id="2F5D4006-70C8-0B28-CF29-AA8701040CC7">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>878C40CD-A752-97A7-9C6A-5B7C933A7C5A</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resource_views" id="B76053AD-E857-21BD-3DB4-6734E9D245C6">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>51361771-3FE1-E8C0-4EBB-AA9235093AEE</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Category_id" id="4C8AE205-040F-F3EC-5ED7-FE9A150B5E0C">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>AF023555-564B-C673-9FF0-9E6FB883A76F</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33EE16BD-1CD1-8987-F980-BC7F407AB3C9" referredColumn="9C4052CB-92E7-7383-BDB6-B7AE4539E005"/>
+</associations>
+</Column>
+<Column name="Type_id" id="87CCF293-A2EA-5789-0A4E-D609FA9BC54D">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>3E7CF1E4-CC91-391C-B021-A13B277D2011</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DDD2566-64FE-EABE-CBA6-1361FBEC9054" referredColumn="5427A3E8-B3D6-9A50-B62D-933C61ACF1C5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFD02ACD-E602-108C-3AFE-9F5DECD9F72E" name="Resource_PK">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>39119E7D-B876-0FE8-8E7C-0CF4E5D91C5E</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D60B7C13-B8F1-3529-73B4-044893729027"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E80A289-2180-289E-DFF2-71B95FAA57E4" name="Resource_Category_FK">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>B57E2065-E0AF-B016-8EB2-E48C516C0E78</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C8AE205-040F-F3EC-5ED7-FE9A150B5E0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="226BF1B1-5FEC-1F86-0888-BA99CC467B5D" name="Resource_Type_FK">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>87F058EF-2C62-5196-92ED-6926CE3497FB</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87CCF293-A2EA-5789-0A4E-D609FA9BC54D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

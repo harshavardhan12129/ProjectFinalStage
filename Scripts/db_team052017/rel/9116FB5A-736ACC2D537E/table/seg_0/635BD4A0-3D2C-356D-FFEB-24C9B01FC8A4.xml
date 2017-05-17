@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="635BD4A0-3D2C-356D-FFEB-24C9B01FC8A4" name="Contact_us">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>700EA6F4-DA8B-9615-425C-685970D9DB45</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="DD877C9B-71C5-5BF0-C684-AA7566914B26">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>6001BAF5-3E04-458C-AF8E-0CEF1E881667</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="FD38D668-82ED-CB84-E9A2-BA16A1CCBFB1">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>DA8136BD-9040-A05A-C3FC-96A6516A3EE4</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Subject" id="7AA2F999-900A-5FB1-EFEE-DCA901FEC12B">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>84228103-5F16-58AF-EEBE-EE3611422484</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comments" id="87957EDB-4300-64F3-0AD6-16FAA4FF68DA">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>3FC84B5D-51F6-B860-8D11-CF1F311C48B7</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7403BBA4-E558-DC24-4021-996349DF2EDF" name="Contact_us_PK">
+<createdBy>larev</createdBy>
+<createdTime>2017-05-17 06:33:40 UTC</createdTime>
+<generatorID>4F9288DD-FFDB-24D7-E079-0E729522DEEA</generatorID>
+<ownerDesignName>db_team052017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD877C9B-71C5-5BF0-C684-AA7566914B26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
