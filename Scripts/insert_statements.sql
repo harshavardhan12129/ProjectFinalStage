@@ -31,19 +31,19 @@ data sets that are so large or complex that traditional data processing applicat
 
 querying, updating and information privacy. The term "big data" often refers simply to the use of predictive analytics, user behavior analytics, or certain other advanced data analytics methods that extract value from data, and seldom 
 
-to a particular size of data set. There is little doubt that the quantities of data now available are indeed large, but that's not the most relevant characteristic of this new data ecosystem.[2] Analysis of data sets can find new 
+to a particular size of data set. There is little doubt that the quantities of data now available are indeed large, but thats not the most relevant characteristic of this new data ecosystem. Analysis of data sets can find new 
 
 correlations to spot business trends, prevent diseases, combat crime and so on. Scientists, business executives, practitioners of medicine, advertising and governments alike regularly meet difficulties with large data-sets in areas 
 
-including Internet search, finance, urban informatics, and business informatics. Scientists encounter limitations in e-Science work, including meteorology, genomics,[4] connectomics, complex physics simulations, biology and 
+including Internet search, finance, urban informatics, and business informatics. Scientists encounter limitations in e-Science work, including meteorology, genomics, connectomics, complex physics simulations, biology and 
 
 environmental research.
 
 Data sets grow rapidly - in part because they are increasingly gathered by cheap and numerous information-sensing mobile devices, aerial (remote sensing), software logs, cameras, microphones, radio-frequency identification (RFID) 
 
-readers and wireless sensor networks. The world's technological per-capita capacity to store information has roughly doubled every 40 months since the 1980s;[8] as of 2012, every day 2.5 exabytes (2.5×1018) of data are generated. One 
+readers and wireless sensor networks. The world technological per-capita capacity to store information has roughly doubled every 40 months since the 1980s;[8] as of 2012, every day 2.5 exabytes (2.5×1018) of data are generated. One 
 
-question for large enterprises is determining who should own big-data initiatives that affect the entire organization.[10]
+question for large enterprises is determining who should own big-data initiatives that affect the entire organization.
 
 Relational database management systems and desktop statistics- and visualization-packages often have difficulty handling big data. The work may require massively parallel software running on tens, hundreds, or even thousands of 
 
@@ -398,6 +398,16 @@ Cyber security includes controlling physical access to the hardware, as well as 
 The field is of growing importance due to the increasing reliance on computer systems and the Internet in mostly developed (first-world) societies,[4] wireless networks such as Bluetooth and Wi-Fi, and the growth of "smart" devices, including smartphones, televisions and tiny devices as part of the Internet of Things.',null);
 commit;
 		
+
+
+
+
+
+
+
+
+
+
 
 
 
