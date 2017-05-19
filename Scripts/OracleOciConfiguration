@@ -9,3 +9,7 @@ C:/wamp/bin/apache/Apache2.4.4/bin
 extension=php_oci8_12c.dll 
 5 - Restart apache server.
 
+
+
+OCI functions to work with oracle:
+http://tw2.php.net/manual/en/ref.oci8.php
