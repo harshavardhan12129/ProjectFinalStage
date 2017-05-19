@@ -427,3 +427,5 @@ INSERT INTO TYPE (TYPE_ID,TYPE_DSC) VALUES (type_seq.nextval,'Video Tutorial');
 
 commit;
           
+INSERT INTO "Resource" values (resource_seq.nextval, 'HTML Fundamentals','P',1,null,12,3);
+commit;
