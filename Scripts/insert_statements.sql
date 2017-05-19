@@ -321,7 +321,7 @@ implementation being common.',null);
 
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Business Intelligence','Business intelligence (BI) is an umbrella term that includes the applications, 
 
-infrastructure and tools, and best practices that enable access to and analysis of information to improve and optimize decisions and performance. Also see: Gartner s Data & Analytics Summit.','Business Intelligence (BI) comprises the 
+infrastructure and tools, and best practices that enable access to and analysis of information to improve and optimize decisions and performance. Also see: Gartner s Data  Analytics Summit.','Business Intelligence (BI) comprises the 
 
 set of strategies, processes, applications, data, technologies and technical architectures which are used by enterprises[citation needed] to support the collection, data analysis, presentation and dissemination of business information.
 
@@ -421,9 +421,9 @@ commit;
 
 
 
-INSERT INTO TYPE (TYPE_ID,TYPE_DSC) VALUES (type_seq.nextval,'External Course');  
+INSERT INTO TYPE (TYPE_ID,TYPE_DSC) VALUES (type_seq.nextval,'Course');  
 INSERT INTO TYPE (TYPE_ID,TYPE_DSC) VALUES (type_seq.nextval,'Book');  
-INSERT INTO TYPE (TYPE_ID,TYPE_DSC) VALUES (type_seq.nextval,'Onsite Course');  
+INSERT INTO TYPE (TYPE_ID,TYPE_DSC) VALUES (type_seq.nextval,'Video Tutorial');  
 
 commit;
           
