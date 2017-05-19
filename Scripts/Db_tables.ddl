@@ -34,7 +34,7 @@ CREATE TABLE "Resource"
   (
     Resource_id     NUMBER NOT NULL ,
     Resource_name   VARCHAR2 (80) NOT NULL ,
-    Resource_access VARCHAR2 (1) ,
+    Resource_access VARCHAR2 (1) , -- F = Free ; P = Paid
     SOURCE          NUMBER(1), --0 = 'On Site'  1 = 'External'  
     resource_views  NUMBER ,
     Category_id     NUMBER NOT NULL ,
