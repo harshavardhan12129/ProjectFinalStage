@@ -19,7 +19,7 @@
 								$sql = oci_parse($conn,'Select CATEGORY_ID, CATEGORY_NAME FROM category');
 								oci_execute($sql);
 								while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
-									echo '<li><a href="#">'.$row["CATEGORY_NAME"].'</a></li>';
+									echo '<li><a href="#" id="'.$row["CATEGORY_ID"].'" onClick="nav_category_id_selected('.$row["CATEGORY_ID"].')">'.$row["CATEGORY_NAME"].'</a></li>';
 								}												
 							?>     
 						</ul>
@@ -139,4 +139,42 @@
 			  	</footer>				
 			</div>
 <?php } ?> 
+
+<?php
+	function display_results($conn, $sql){
+		while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
+			
+			print '<div class="row">';
+			print '	<div class="sixtyPercDiv">' 	;
+			print '		<ul class="media-list results">';
+			print '			<li class="media">';
+			print '			<div class="media-left">';
+			print '				<a href="#">';
+								if (isset($row["RESOURCE_THUMBNAIL"])){
+									$img = oci_lob_load($row["RESOURCE_THUMBNAIL"]);
+									echo '<img class="media-object" alt="..." 	src="data:image/jpeg;base64,'.base64_encode($img).' "/>';
+								}
+			print '				</a>';
+			print '			</div>';
+			print '			<div class="media-body">';
+			print '					<h4 class="media-heading"><a href="https://www.pluralsight.com/courses/html-fundamentals" target="_blank"><mark>'. $row["RESOURCE_NAME"].'</a><span class="label label-danger">External Course</span></h4>'.$row["RESOURCE_SHORT_DSC"];
+			print '				</div>';
+			print '			</li>';
+			print '		</ul>';
+			print '	</div>';
+			print '</div>';
+
+				
+			
+		}	
+		//close db connection
+		oci_close($conn);
+		
+	}
+	
+
+
+
+?>
+
 
