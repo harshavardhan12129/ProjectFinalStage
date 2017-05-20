@@ -1,3 +1,6 @@
+
+------------------------INSERTING CATEGORIES--------------------------------------------------------
+
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Programming Language','Programming languages generally consist of instructions for a computer. Programming 
 
 languages can be used to create programs that implement specific algorithms.','A programming language is a formal language that specifies a set of instructions that can be used to produce various kinds of output. Programming languages 
@@ -17,10 +20,6 @@ The description of a programming language is usually split into the two componen
 an ISO Standard) while other languages (such as Perl) have a dominant implementation that is treated as a reference. Some languages have both, with the basic language defined by a standard and extensions taken from the dominant 
 
 implementation being common.',null);
-
-
-
-
 
 
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Big Data','Big Data is a phrase used to mean a massive volume of both structured and unstructured data that is so 
@@ -52,10 +51,6 @@ servers.[11] What counts as big data varies depending on the capabilities of the
 first time may trigger a need to reconsider data management options. For others, it may take tens or hundreds of terabytes before data size becomes a significant consideration.',null);
 
 
-
-
-
-
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Cloud Computing','What is the cloud? Where is the cloud? Are we in the cloud now? These are all questions you ve 
 
 probably heard or even asked yourself. The term "cloud computing" is everywhere.','Cloud computing is a type of Internet-based computing that provides shared computer processing resources and data to computers and other devices on 
@@ -83,12 +78,6 @@ growth in cloud computing.[8][9][10] Companies can scale up as computing needs i
 to the advantages of high computing power, cheap cost of services, high performance, scalability, accessibility as well as availability. Some cloud vendors are experiencing growth rates of 50% per year,[12] but being still in a stage of 
 
 infancy, it has pitfalls that need to be addressed to make cloud computing services more reliable and user friendly.',null);
-
-
-
-
-
-
 
 
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Enterprise Content Management','It’s not enough to “manage” content. The ability to access the correct version of 
@@ -133,11 +122,6 @@ anyway.
 ECM is an ongoing and evolving strategy for maximizing how your content is to be used.',null);
 
 
-
-
-
-
-
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'GIS','A geographic information system (GIS) is a computer system for capturing, storing, checking, and displaying 
 
 data related to positions on Earth s surface. GIS can show many different kinds of data on one map. This enables people to more easily see, analyze, and understand patterns and relationships.','A geographic information system (GIS) is a 
@@ -160,12 +144,6 @@ and elevation, respectively. All Earth-based spatial–temporal location and ext
 
 avenues of scientific inquiry.',null);
 
-
-
-
-
-
-
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'IT and Hardware','Computer hardware is the collection of physical components that constitute a computer system. 
 
 Computer hardware is the physical parts or components of a computer, such as monitor, keyboard, computer data storage, graphic card, sound card, motherboard, and so on, all of which are tangible objects.[1] By contrast, software is 
@@ -177,17 +155,6 @@ an electronic digital computer with subdivisions of a processing unit consisting
 instructions, external mass storage, and input and output mechanisms.[3] The meaning of the term has evolved to mean a stored-program computer in which an instruction fetch and a data operation cannot occur at the same time because they 
 
 share a common bus. This is referred to as the Von Neumann bottleneck and often limits the performance of the system.',null);
-
-
-
-
-
-
-
-
-
-
-
 
 
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Network Administration','A network administrator, sometimes called a systems administrator, is responsible for 
@@ -209,16 +176,6 @@ As with many technical roles, network administrator positions require a breadth 
 more senior role of network engineer is sometimes attached to the responsibilities of the network administrator. It is common for smaller organizations to outsource this function',null);
 
 
-
-
-
-
-
-
-
-
-
-
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Operating System','The operating system (OS) is the most important program that runs on a computer. Every 
 
 general-purpose computer must have an operating system to run other programs and applications','An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer 
@@ -238,17 +195,6 @@ tablet combined) sector, according to third quarter 2016 data, Android by Google
 of 5.2 percent, while other operating systems amount to just 0.3 percent.[4] Linux distributions are dominant in the server and supercomputing sectors. Other specialized classes of operating systems, such as embedded and real-time 
 
 systems, exist for many applications.',null);
-
-
-
-
-
-
-
-
-
-
-
 
 
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'DBMS','A database management system (DBMS) is system software for creating and managing databases. The DBMS 
@@ -276,17 +222,6 @@ The DBMS can offer both logical and physical data independence. That means it ca
 With relational DBMSs (RDBMSs), this API is SQL, a standard programming language for defining, protecting and accessing data in a RDBMS.',null);
 
 
-
-
-
-
-
-
-
-
-
-
-
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Programming Languages','A programming language is a formal language that specifies a set of instructions that can 
 
 be used to produce various kinds of output','A programming language is a formal language that specifies a set of instructions that can be used to produce various kinds of output. Programming languages generally consist of instructions 
@@ -306,17 +241,6 @@ The description of a programming language is usually split into the two componen
 an ISO Standard) while other languages (such as Perl) have a dominant implementation that is treated as a reference. Some languages have both, with the basic language defined by a standard and extensions taken from the dominant 
 
 implementation being common.',null);
-
-
-
-
-
-
-
-
-
-
-
 
 
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Business Intelligence','Business intelligence (BI) is an umbrella term that includes the applications, 
@@ -348,15 +272,6 @@ Often[quantify] BI applications use data gathered from a data warehouse (DW) or 
 decision support.',null);
 
 
-
-
-
-
-
-
-
-
-
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Internet Fundamentals','Internet Fundamentals. The Internet is a global system of interconnected computer networks 
 
 that use the standard Internet protocol suite (TCP/IP) to serve several billion users worldwide. This lesson introduces Internet fundamentals and helps learners prepare for the IC3 Living Online certification exam','The Internet is the 
@@ -370,25 +285,11 @@ This course is comprised of 14 lessons covering Internet concepts. Each lesson i
 Internet Business Associate certification.',null);
 
 
-
-
-
-
-
-
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Networking','A computer network or data network is a telecommunications network which allows nodes to share resources. In computer networks, networked computing devices exchange data with each other using a data link. The connections between nodes are established using either cable media or wireless media.','A computer network or data network is a telecommunications network which allows nodes to share resources. In computer networks, networked computing devices exchange data with each other using a data link. The connections between nodes are established using either cable media or wireless media.
 
 Network computer devices that originate, route and terminate the data are called network nodes.[1] Nodes can include hosts such as personal computers, phones, servers as well as networking hardware. Two such devices can be said to be networked together when one device is able to exchange information with the other device, whether or not they have a direct connection to each other. In most cases, application-specific communications protocols are layered (i.e. carried as payload) over other more general communications protocols. This formidable collection of information technology requires skilled network management to keep it all running reliably.
 
 Computer networks support an enormous number of applications and services such as access to the World Wide Web, digital video, digital audio, shared use of application and storage servers, printers, and fax machines, and use of email and instant messaging applications as well as many others. Computer networks differ in the transmission medium used to carry their signals, communications protocols to organize network traffic, the network s size, topology and organizational intent. The best-known computer network is the Internet.',null);
-
-
-
-
-
-
-
-
 
 
 INSERT INTO CATEGORY (CATEGORY_ID,CATEGORY_NAME,CATEGORY_SHORT_DSC,CATEGORY_DSC,BANNER_IMG) VALUES (CATEGORY_SEQ.nextval,'Security','Computer security, also known as cyber security or IT security, is the protection of computer systems from the theft or damage to their hardware, software or information, as well as from disruption or misdirection of the services they provide.','Computer security, also known as cyber security or IT security, is the protection of computer systems from the theft or damage to their hardware, software or information, as well as from disruption or misdirection of the services they provide.[1]
@@ -400,25 +301,7 @@ commit;
 		
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+------------------------INSERTING TYPES--------------------------------------------------------
 
 
 INSERT INTO TYPE (TYPE_ID,TYPE_DSC) VALUES (type_seq.nextval,'Course');  
@@ -426,11 +309,26 @@ INSERT INTO TYPE (TYPE_ID,TYPE_DSC) VALUES (type_seq.nextval,'Book');
 INSERT INTO TYPE (TYPE_ID,TYPE_DSC) VALUES (type_seq.nextval,'Video Tutorial');  
 
 commit;
+
+------------------------INSERTING RESOURCES--------------------------------------------------------
           
-INSERT INTO "Resource" values (resource_seq.nextval, 'HTML Fundamentals','P',1,null,12,3);
-INSERT INTO "Resource" values (resource_seq.nextval, 'HTML With Dreamweaver','P',1,null,12,3);
-INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID) 
-values (resource_seq.nextval, 'HTML: Web Guide For Absolute HTML','P',1,null,12,2);
-INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID) 
-values (resource_seq.nextval, 'HTML: Inside Course Example HTML','F',0,null,12,1);
+INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC) 
+values (resource_seq.nextval, 'HTML Fundamentals','P',1,null,12,3,'HTML markup is the heart of any web application and this course will teach you the fundamentals of HTML regardless of the tool you use to author it. You will learn how to properly define your HTML markup and follow the standards, how to create lists, tables, and images, and all about text elements. Along the way you will also be show what NOT to do in your HTML. ',
+'HTML markup is the heart of any web application and this course will teach you the fundamentals of HTML regardless of the tool you use to author it. You will learn how to properly define your HTML markup and follow the standards, how to create lists, tables, and images, and all about text elements. Along the way you will also be show what NOT to do in your HTML. ');
+
+INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC)
+values (resource_seq.nextval, 'HTML With Dreamweaver','P',1,null,12,3,'A well-defined web page structure provides the foundation for your layout and styling. See how to use Hypertext Markup Language (HTML) to structure pages in Adobe Dreamweaver. ',
+'A well-defined web page structure provides the foundation for your layout and styling. See how to use Hypertext Markup Language (HTML) to structure pages in Adobe Dreamweaver. ');
+
+INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC) 
+values (resource_seq.nextval, 'HTML: Web Guide For Absolute HTML','P',1,null,12,2,
+'HTML Web Guide For Absolute Beginners is a book for beginners. No prior knowledge of HTML required. You do Not need to read a 500 pages book to learn HTML. Just follow these simple examples and become proficient with HTML in less than 24 hours. Straightforward examples. So easy, anyone can learn it! ',
+'HTML Web Guide For Absolute Beginners is a book for beginners. No prior knowledge of HTML required. You do not need to read a 500 pages book to learn HTML. Just follow these simple examples and become proficient with HTML in less than 24 hours. Straightforward examples. So easy, anyone can learn it! ');
+
+INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC) 
+values (resource_seq.nextval, 'HTML: Inside Course Example HTML','F',0,null,12,1,
+'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam repellat, maiores quaerat, officia quo quidem dolores possimus nostrum quasi nesciunt, dignissimos pariatur necessitatibus eos dolor. Numquam, ullam veritatis nesciunt ea! ',
+'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam repellat, maiores quaerat, officia quo quidem dolores possimus nostrum quasi nesciunt, dignissimos pariatur necessitatibus eos dolor. Numquam, ullam veritatis nesciunt ea! ');
+
+
 commit;
