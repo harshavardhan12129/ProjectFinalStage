@@ -1,0 +1,36 @@
+**********************IF YOU ARE ON JCU COMPUTER LABS*************************************************
+
+CONNECT WITH YOUR JCU USER AND CREATE DB TABLES
+------------------------------------------------------------------
+1- In the ppt lab CP 5310-PHP-Part 2-Oracle.pptx in the two first slides there is a guide to connect from SQL Developer to a oracle XE schema that we have all configured by the professor.
+2- In ProjectFinalStage/Scripts/ I've put all the script that you should run on SQL DEVELOPER. With those scripts you will generate our database and populate with some data examples. The scripts is all named with a sequence order as a prefix. If you'll work in the computer labs, you should start from step 2. Because the user we have already created.
+
+
+
+
+**********************IF YOU ARE WORKING LOCALLY***************************************************
+
+CONFIGURING APACHE AND PHP TO WORK WITH ORACLE
+---------------------------------------------------------
+1 - Install Oracle Instant client from http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
+If you are running wamp x64 then you must download the instant-client x64, if your are running wamp 32 bit, then you must download the 32 bit 
+version of oracle instant client.
+2- Select the version Instant Client Package
+3- extract the instant client in 
+C:/wamp/bin/php/php5.4.16/ext/
+C:/wamp/bin/apache/Apache2.4.4/bin 
+4 - Open php.ini file and unncoment the following line:
+extension=php_oci8_12c.dll 
+5 - Restart apache server.
+
+CREATE A NEW USER AND CONNECT WITH IT TO CREATE DB TABLES
+------------------------------------------------------------------
+1- In ProjectFinalStage/Scripts/ I've put all the script that you should run on SQL DEVELOPER. With those scripts you will generate our database and populate with some data examples. The scripts is all named with a sequence order as a prefix. you should start from step 1.
+2- To run the script number 1. You must connect to your database with the user system.
+3- After create your user name, disconnect the user system and connect with your new user. The new user would be TEAM052017 and password oracle
+4- Copy and paste the sql that you will find in 2-Db_tables.ddl, and execute it. It will create all our database tables.
+5- Run the other scripts in order.  3-Sequence.sql and 4-insert_statements.sql
+
+
+OCI functions to work with oracle:
+http://tw2.php.net/manual/en/ref.oci8.php
