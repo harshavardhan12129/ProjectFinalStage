@@ -32,13 +32,15 @@ ALTER TABLE Contact_us ADD CONSTRAINT Contact_us_PK PRIMARY KEY ( Id ) ;
 
 CREATE TABLE "Resource"
   (
-    Resource_id     NUMBER NOT NULL ,
-    Resource_name   VARCHAR2 (80) NOT NULL ,
-    Resource_access VARCHAR2 (1) , -- F = Free ; P = Paid
-    SOURCE          NUMBER(1), --0 = 'On Site'  1 = 'External'  
-    resource_views  NUMBER ,
-    Category_id     NUMBER NOT NULL ,
-    Type_id         NUMBER NOT NULL 
+    Resource_id         NUMBER NOT NULL ,
+    Resource_name       VARCHAR2 (80) NOT NULL ,
+    RESOURCE_SHORT_DSC  VARCHAR2 (1000),
+    RESOURCE_DSC        VARCHAR2 (5000),
+    Resource_access     VARCHAR2 (1) , -- F = Free ; P = Paid
+    SOURCE              NUMBER(1), --0 = 'On Site'  1 = 'External'  
+    resource_views      NUMBER ,
+    Category_id         NUMBER NOT NULL ,
+    Type_id             NUMBER NOT NULL 
   ) ;
 ALTER TABLE "Resource" ADD CONSTRAINT Resource_PK PRIMARY KEY ( Resource_id ) ;
 
