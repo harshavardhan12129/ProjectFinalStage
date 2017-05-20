@@ -12,6 +12,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/e_library.css" rel="stylesheet" type="text/css">
+		<!--<script>
+			function nav_category_id_selected(cat_id){
+				
+			} 
+		</script>-->
 	</head>
   
 	<body style="padding-top: 50px">
@@ -20,32 +25,33 @@
 		?>
 		<div class="container-fluid">
 			<div class="row" id="principalImage">
-			
-			  <div class="row" id="searcher">
-					<div class="col-md-12 col-lg-12 col-sm-12">
-						<div class="input-group input-group-lg">
-							<div class="input-group-btn">
-								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Contents <span class="caret"></span></button>
-								<ul class="dropdown-menu">
-									<?php //loading the drop down
-										$conn = db_connect();
-										$sql = oci_parse($conn,'Select CATEGORY_ID, CATEGORY_NAME FROM category');
-										oci_execute($sql);
-										while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
-											echo '<li><a href="#">'.$row["CATEGORY_NAME"].'</a></li>';
-										}	
-										oci_close($conn);
-									?>        
-								</ul>
+				<form method=post action="Results.php">
+			 		<div class="row" id="searcher">
+						<div class="col-md-12 col-lg-12 col-sm-12">
+							<div class="input-group input-group-lg">
+								<div class="input-group-btn">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Contents <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<?php //loading the drop down
+											$conn = db_connect();
+											$sql = oci_parse($conn,'Select CATEGORY_ID, CATEGORY_NAME FROM category');
+											oci_execute($sql);
+											while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
+												echo '<li><a href="#">'.$row["CATEGORY_NAME"].'</a></li>';
+											}	
+											oci_close($conn);
+										?>        
+									</ul>
+								</div>						
+								<input type="text" class="form-control"  name="search_text" placeholder="Search">
+								<span class="input-group-btn">
+								<input type="submit" class="btn btn-default" name="submit" value="submit">
+													
+								</span>					
 							</div>
-							<input type="text" class="form-control" placeholder="Search">
-							<span class="input-group-btn">
-								<a href="Results.html" class="btn btn-default" type="button">Search</a>
-								
-							</span>
-						</div>
-					 </div>
-				</div>
+						 </div>
+					</div>
+     	 		</form>
 	     	 	<h1>Welcome to IT-Library</h1>
 		     	<h3>All IT sources in one site. Books, tutorials, apps and much more.</h3>
 			 	<img src="images/library.png" class="img-responsive blurImage" alt="E-library Image Banner">		
