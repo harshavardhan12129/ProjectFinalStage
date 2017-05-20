@@ -36,6 +36,7 @@ CREATE TABLE RESOURCES
     Resource_access     VARCHAR2 (1) , -- F = Free ; P = Paid
     SOURCE              NUMBER(1), --0 = 'On Site'  1 = 'External'  
     resource_views      NUMBER ,
+    RESOURCE_THUMBNAIL  BLOB,
     Category_id         NUMBER NOT NULL ,
     Type_id             NUMBER NOT NULL 
   ) ;
