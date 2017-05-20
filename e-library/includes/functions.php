@@ -1,4 +1,5 @@
 <?php
+	include_once('includes/config.php');
 	function navigation_bar(){
 ?>		
 		<nav class="navbar navbar-default navbar-fixed-top">	
