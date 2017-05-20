@@ -428,4 +428,9 @@ INSERT INTO TYPE (TYPE_ID,TYPE_DSC) VALUES (type_seq.nextval,'Video Tutorial');
 commit;
           
 INSERT INTO "Resource" values (resource_seq.nextval, 'HTML Fundamentals','P',1,null,12,3);
+INSERT INTO "Resource" values (resource_seq.nextval, 'HTML With Dreamweaver','P',1,null,12,3);
+INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID) 
+values (resource_seq.nextval, 'HTML: Web Guide For Absolute HTML','P',1,null,12,2);
+INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID) 
+values (resource_seq.nextval, 'HTML: Inside Course Example HTML','F',0,null,12,1);
 commit;
