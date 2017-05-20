@@ -312,20 +312,21 @@ commit;
 
 ------------------------INSERTING RESOURCES--------------------------------------------------------
           
-INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC) 
+    
+INSERT INTO RESOURCES (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC) 
 values (resource_seq.nextval, 'HTML Fundamentals','P',1,null,12,3,'HTML markup is the heart of any web application and this course will teach you the fundamentals of HTML regardless of the tool you use to author it. You will learn how to properly define your HTML markup and follow the standards, how to create lists, tables, and images, and all about text elements. Along the way you will also be show what NOT to do in your HTML. ',
 'HTML markup is the heart of any web application and this course will teach you the fundamentals of HTML regardless of the tool you use to author it. You will learn how to properly define your HTML markup and follow the standards, how to create lists, tables, and images, and all about text elements. Along the way you will also be show what NOT to do in your HTML. ');
 
-INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC)
+INSERT INTO RESOURCES (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC)
 values (resource_seq.nextval, 'HTML With Dreamweaver','P',1,null,12,3,'A well-defined web page structure provides the foundation for your layout and styling. See how to use Hypertext Markup Language (HTML) to structure pages in Adobe Dreamweaver. ',
 'A well-defined web page structure provides the foundation for your layout and styling. See how to use Hypertext Markup Language (HTML) to structure pages in Adobe Dreamweaver. ');
 
-INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC) 
+INSERT INTO RESOURCES (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC) 
 values (resource_seq.nextval, 'HTML: Web Guide For Absolute HTML','P',1,null,12,2,
 'HTML Web Guide For Absolute Beginners is a book for beginners. No prior knowledge of HTML required. You do Not need to read a 500 pages book to learn HTML. Just follow these simple examples and become proficient with HTML in less than 24 hours. Straightforward examples. So easy, anyone can learn it! ',
 'HTML Web Guide For Absolute Beginners is a book for beginners. No prior knowledge of HTML required. You do not need to read a 500 pages book to learn HTML. Just follow these simple examples and become proficient with HTML in less than 24 hours. Straightforward examples. So easy, anyone can learn it! ');
 
-INSERT INTO "Resource" (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC) 
+INSERT INTO RESOURCES (RESOURCE_ID,RESOURCE_NAME,RESOURCE_ACCESS,SOURCE,RESOURCE_VIEWS,CATEGORY_ID,TYPE_ID,RESOURCE_SHORT_DSC,RESOURCE_DSC) 
 values (resource_seq.nextval, 'HTML: Inside Course Example HTML','F',0,null,12,1,
 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam repellat, maiores quaerat, officia quo quidem dolores possimus nostrum quasi nesciunt, dignissimos pariatur necessitatibus eos dolor. Numquam, ullam veritatis nesciunt ea! ',
 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam repellat, maiores quaerat, officia quo quidem dolores possimus nostrum quasi nesciunt, dignissimos pariatur necessitatibus eos dolor. Numquam, ullam veritatis nesciunt ea! ');
