@@ -1,3 +1,6 @@
+<?php 
+	include_once('includes/functions.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 	 <head>
@@ -96,6 +99,8 @@
 				<div class="row" id="index_content">
 				  <div class="col-md-4">
 				  	<ul>
+                    	<php? display_site_maps_values() ?>
+                        <li><a href="#">testfghdfg</a></li>
 						<li><a href="#">Advanced Topics in Computer Networks</a></li>
 						<li><a href="#">Advanced and Distributed Operating Systems</a></li>
 						<li><a href="#">Advanced Software Modelling</a></li>
