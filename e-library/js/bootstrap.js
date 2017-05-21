@@ -4,6 +4,17 @@
  * Licensed under the MIT license
  */
 
+//FOR SELECTING CATEGORIES IN SEARCHING
+$(".dropdown-menu li a").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.input-group-btn').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+});
+
+//TO SAVE THE SELECTED VALUE
+$("#btnSearch").click(function(){
+	alert($('.btn-select').text()+", "+$('.btn-select2').text());
+});
+
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
