@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 	<script>
 	function checkRePassword(document) {	
