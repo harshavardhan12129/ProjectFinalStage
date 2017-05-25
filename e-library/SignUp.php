@@ -1,5 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+	<script>
+	function checkRePassword(document) {	
+	  var pwd = document.getElementById("password");
+  	  var pwd_msg = document.getElementById('pwd_msg');
+	  var repwd = document.getElementById("rePassword");	  
+	  if (pwd.value != repwd.value) {
+		pwd_msg.innerHTML = "The two passwords are not the same. Please re-enter both now";
+		repwd.value = "";
+		pwd.focus();
+		return false;
+	  }
+	  else {
+		pwd_msg.innerHTML = "";  
+	  }  
+	  return true;
+	}	
+
+	function validateInfo(document) { 
+	  if (checkRePassword(document))
+	  { 
+		return true;
+	  }
+	  return false;
+	}	
+</script>
 	 <head>
 		<meta charset="utf-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
