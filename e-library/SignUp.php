@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
 	<script>
 	function checkRePassword(document) {	
 	  var pwd = document.getElementById("password");
