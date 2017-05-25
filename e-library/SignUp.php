@@ -61,94 +61,31 @@
   <li><a href="#">SignUp</a></li>
  
 </ol>
-			<div class="col-md-6">
-				<br>
-				<div class="panel panel-default">
-					<div class="panel-heading">Sign Up</div>
-					<div>
-						<div class="panel-body">
-							  <div>
-									<div class="input-group">
-										<div class="col-md-6">
-											<p>User Name</p>
-								  
-										</div>
-										<div class="col-md-6">
-											<input type="text" class="form-control" placeholder="User Name" aria-describedby="addon1">
-										</div>
-								  	</div> 
-		
-							  </div><br> 
-			                  <div>
-									<div class="input-group">
-										<div class="col-md-6">
-											<p>First Name</p>
-								  
-										</div>
-										<div class="col-md-6">
-											<input type="text" class="form-control" placeholder="First Name" aria-describedby="addon1">
-										</div>
-								  	</div> 
-		
-							  </div><br>
-			                  <div>
-									<div class="input-group">
-										<div class="col-md-6">
-											<p>Last Name</p>
-								  
-										</div>
-										<div class="col-md-6">
-											<input type="text" class="form-control" placeholder="Last Name" aria-describedby="addon1">
-										</div>
-								  	</div> 
-		
-							  </div><br>
-			                  <div>
-									<div class="input-group">
-										<div class="col-md-6">
-											<p>Mobile number</p>
-								  
-										</div>
-										<div class="col-md-6">
-											<input type="text" class="form-control" placeholder="Mobile number" aria-describedby="addon1">
-										</div>
-								  	</div> 
-		
-							  </div><br>    
-				          
-					          <div>
-									<div class="input-group">
-										<div class="col-md-6">
-											<p>Password</p>
-								  
-										</div>
-										<div class="col-md-6">
-											<input type="text" class="form-control" placeholder="Password" aria-describedby="addon1">
-										</div>
-								  </div><br>
-							 <div>
-									<div class="input-group">
-										<div class="col-md-6">
-											<p>Confirm Password</p>
-								  
-									   </div>
-										<div class="col-md-6">
-											<input type="text" class="form-control" placeholder="Confirm Password" aria-describedby="addon1">
-										</div>
-								  	</div> 	  	 
-		
-							  </div> 
-						</div>
-						<div class="btn-group" role="group">
-            	    	<button type="button" class="btn btn-primary">Sign Up</button>
-            			</div>
-					</div>
-					
-				</div>
-	
-			</div>                    
-		</div>       
-		
+			<form action="registration_process_oracle.php" method="post">
+ <table border="0">
+	<tr>
+    	<td align="right">* Name:</td>
+    	<td><input type="text" id="name" name="name" required></td>
+	</tr>
+	<tr>
+    	<td align="right">* Email:</td>
+    	<td><input type="email" name="email" id="email" required></td>
+	</tr>
+	<tr>
+    	<td align="right">* Password:</td>
+    	<td><input type="password" id="password" name="password" required></td>
+        <td id="pwd_msg" style="color:red;"></td>
+	</tr>
+	<tr>
+    	<td align="right">* Re-try:</td>
+    	<td><input type="Password" id="rePassword" name="rePassword" onChange="checkRePassword(document)"></td>
+	</tr>
+	<tr>
+    	<td align="right"><input type="submit" name="submit" value="Submit" onClick="return validateInfo(document)"></td>
+    	<td><input type="reset" name="reset" value="Clear"></td>
+	</tr>
+  </table> 
+</form>
 	
 		
 		<div class="row">
