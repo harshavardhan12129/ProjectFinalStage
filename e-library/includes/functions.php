@@ -172,6 +172,37 @@
 		
 	}
 	
+function display_resources(){
+		//make the database connection
+		$conn = db_connect();
+
+		$sql_str = "select RESOURCE_NAME from resources " ;
+		$sql = oci_parse($conn,$sql_str);
+		oci_execute($sql);
+
+			print '<div class="row" id="index_content">';
+			$count = 0;
+			while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
+				
+				$count = $count + 1;
+				if ($count=1){
+					print '<div class="col-md-4">';
+					print ' 	<ul>';
+				};		
+				print '	<li><a href="#">'.$row["RESOURCE_NAME"].'</a></li>';
+				if ($count=2){
+					print'  	</ul>';
+					print'  </div>';
+					$count = 0;
+				};
+			}
+			print '</div>  ';
+	
+			//close db connection
+		oci_close($conn);
+		
+	}
+
 
 
 
