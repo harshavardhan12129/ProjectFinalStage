@@ -96,57 +96,10 @@
 					  </ul>
 				</div>
 			</div>
-				<div class="row" id="index_content">
-				  <div class="col-md-4">
-				  	<ul>
-                    	<php? display_site_maps_values() ?>
-                        <li><a href="#">testfghdfg</a></li>
-						<li><a href="#">Advanced Topics in Computer Networks</a></li>
-						<li><a href="#">Advanced and Distributed Operating Systems</a></li>
-						<li><a href="#">Advanced Software Modelling</a></li>
-						<li><a href="#">Applying Network Security</a></li>
-						<li><a href="#">Business Intelligence</a></li>
-						<li><a href="#">Business Requirements Modelling</a></li>
-						<li><a href="#">Business Systems Design</a></li>
-						<li><a href="#">Cloud Computing and Software as a Service</a></li>
-						<li><a href="#">Cloud Computing Infrastructure</a></li>
-						<li><a href="#">Collaborative Business Processes</a></li>
-						<li><a href="#">Computer Game Design</a></li>
-							
-					
-				  	</ul>
-				  </div>
-				  <div class="col-md-4">
-				  		<li><a href="#">Computer Graphics Rendering Techniques</a></li>
-						<li><a href="#">Contemporary Telecommunications</a></li>
-						<li><a href="#">Data Mining and Visualisation</a></li>
-						<li><a href="#">Database Fundamentals</a></li>
-						<li><a href="#">Digital Media Technologies</a></li>
-						<li><a href="#">e-Business Trading</a></li>
-						<li><a href="#">e-Commerce </a></li>
-						<li><a href="#">e-Market Trading Technology </a></li>
-						<li><a href="#">Enabling Enterprise Information Systems</a></li>
-						<li><a href="#">Enterprise Business Requirements</a></li>
-						<li><a href="#">Enterprise Software Architecture and Middleware</a></li>
-						<li><a href="#">Enterprise Software Testing</a></li>
-						
-				  </div>
-				  <div class="col-md-4">
-				  	    <li><a href="#">Finance and IT Professionals</a></li>
-						<li><a href="#">Fundamentals of Data Analytics</a></li>
-						<li><a href="#">Fundamentals of Software Development</a></li>
-						<li><a href="#">Game Programming</a></li>
-						<li><a href="#">Global Information Systems</a></li>
-						<li><a href="#">Human-Centred Design Methods</a></li>
-						<li><a href="#">Information System Development Methodologies</a></li>
-						<li><a href="#">Information Systems Strategy</a></li>
-						<li><a href="#">Infrastructure for Cloud Computing</a></li>
-						<li><a href="#">IT Professional Experience 1</a></li>
-						<li><a href="#">IT Professional Experience 2</a></li>
-						<li><a href="#">IT Professional Experience 3</a></li>
-					
-				  </div>
-			  </div>                                                           <!-- Code for Site Map (END) -->
+				 <?php
+                       		 display_resources()
+						?>
+					                                           <!-- Code for Site Map (END) -->
 			  
 		<div class="row">
 	  	<footer class="col-md-12" >
