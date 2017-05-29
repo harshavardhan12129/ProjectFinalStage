@@ -294,9 +294,11 @@ page-header {
 }
 
 #resultQty {
-	margin-left: 15%;
-	margin-bottom: 2%
+	display: block;
+	margin: 0px 12% 2% 12%;
+
 }
+
 
 .ul-horizontal { 	                            /* Site Map CSS Code (START) */
     list-style-type: none;
