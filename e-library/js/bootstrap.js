@@ -8,11 +8,21 @@
 $(".dropdown-menu li a").click(function(){
   var selText = $(this).text();
   $(this).parents('.input-group-btn').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+	// $("#script").load("mysript.php");
+ 			
+	//$("#search_category").html(selText+'</p>');
+	 
+	$("#search_category").attr("value", selText);
+	/*  $.post('mysript.php', 'val=' + selText, function (response) {
+    // alert(response);
+		  $("#search_category").html(response);
+   });*/
+	//window.alert(selText);
 });
 
 //TO SAVE THE SELECTED VALUE
 $("#btnSearch").click(function(){
-	alert($('.btn-select').text()+", "+$('.btn-select2').text());
+	alert($('.btn-select').text()+selText + ","+$('.btn-select2').text());
 });
 
 if (typeof jQuery === 'undefined') {
