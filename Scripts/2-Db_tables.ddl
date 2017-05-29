@@ -48,6 +48,14 @@ CREATE TABLE Type
   ) ;
 ALTER TABLE Type ADD CONSTRAINT Type_PK PRIMARY KEY ( Type_id ) ;
 
+create table users
+(
+  name varchar2(50) not null ,
+  email varchar2(50) primary key,
+  password varchar2(30) not null
+);
+
+
 
 ALTER TABLE RESOURCES ADD CONSTRAINT Resource_Category_FK FOREIGN KEY ( Category_id ) REFERENCES Category ( Category_id ) ;
 
