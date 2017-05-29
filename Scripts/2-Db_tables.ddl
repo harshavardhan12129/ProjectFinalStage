@@ -4,6 +4,7 @@ DROP TABLE CATEGORY;
 DROP TABLE RESOURCES;
 DROP TABLE CONTACT_US;
 DROP TABLE TYPE;
+DROP TABLE USERS;
 
 
 CREATE TABLE Category
@@ -54,7 +55,8 @@ create table users
   name varchar2(50) not null ,
   email varchar2(50) primary key,
   password varchar2(30) not null,
-  photo blob null
+  photo blob null,
+  user_id number not null UNIQUE
 );
 
 
