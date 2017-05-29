@@ -48,11 +48,13 @@ CREATE TABLE Type
   ) ;
 ALTER TABLE Type ADD CONSTRAINT Type_PK PRIMARY KEY ( Type_id ) ;
 
+
 create table users
 (
   name varchar2(50) not null ,
   email varchar2(50) primary key,
-  password varchar2(30) not null
+  password varchar2(30) not null,
+  photo blob null
 );
 
 
