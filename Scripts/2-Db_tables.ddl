@@ -69,3 +69,13 @@ ALTER TABLE RESOURCES ADD CONSTRAINT Resource_Type_FK FOREIGN KEY ( Type_id ) RE
 CREATE UNIQUE INDEX IDX_NAME_UNQ ON CATEGORY (CATEGORY_NAME ASC);
 CREATE UNIQUE INDEX IDX_RES_NAME_UNQ ON RESOURCES (RESOURCE_NAME ASC);
 CREATE UNIQUE INDEX IDX_DSC_UNQ ON TYPE (TYPE_DSC ASC);
+
+
+
+create or replace trigger insert_user_id 
+before insert 
+on users  
+for each row
+begin
+  :new.user_id := user_seq.nextval;
+end;
