@@ -200,38 +200,7 @@ function display_new_topics(){
 		
 	}
 
-function display_all_categories(){
-		//make the database connection
-		$conn = db_connect();
 
-		$sql_str = "
-					SELECT category_name, category_short_dsc
-					FROM category c	" ;
-		$sql = oci_parse($conn,$sql_str);
-		oci_execute($sql);
-
-		
-			print '<section id="Section_Hot-topics" class="row">';		  
-			print '	<div class="col-lg-10 col-lg-offset-1">';
-			print '		<div class="row">';
-			while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
-				print '			<article class="col-sm-6 col-md-4">';
-				print '				<div class="thumbnail">';
-				print '					<h3 ><a href="#">'.$row["CATEGORY_NAME"].'</a></h3>';
-				print '					<div class="caption">'	;				
-				print '						<p>'.$row["CATEGORY_SHORT_DSC"].'</p>';
-				print '						<p> <a href="#" class="btn btn-default" role="button">Explore &gt&gt</a></p>';
-				print '					</div>';
-				print '				</div>';
-				print '			</article>';
-			}
-			print '		</div>';
-			print '	</div>';
-			print '</section>';
-			//close db connection
-		oci_close($conn);
-		
-	}
 	function footer(){
 
 		print '<div class="row">';
@@ -263,7 +232,7 @@ function display_all_categories(){
 		print '			      			<a href="#">Support</a>';
 		print '			      			<a href="#">Help</a>';
 		print '			      			<a href="../ContactUs.html">Contact Us</a>';
-		print '			      			<a href="#">Give us Feedback</a>';
+		print '			      			<a href="feedback.html">Give us Feedback</a>';
 		print '			      		</div>			     		 ';
 		print '			     		 <div class="col-md-2 col-lg-2 col-sm-2 footer-links">';
 		print '							<h4><strong>Social Networking</strong></h4>';
