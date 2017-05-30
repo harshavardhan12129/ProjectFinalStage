@@ -101,90 +101,12 @@
 						?>
 					                                           <!-- Code for Site Map (END) -->
 			  
-		<div class="row">
-	  	<footer class="col-md-12" >
-			   		<div class="row" id="row1FooterContent" >
-			      		
-			      		<div class="col-md-2 footer-links">
-			     			<h4>Quick Links </h4>
-		     		  </div>
-			     		 <div class="col-md-2  footer-links">
-			     		 	<h4>About us</h4>
-			     		 	<a href="#">About Us</a>
-			     		 	<a href="#">Subscribe as a teacher</a>
-			     		 </div>
-			      		<div class="col-md-2 footer-links">
-			      			<h4>Support</h4>
-			      			<a href="#">Support</a>
-			      			<a href="#">Help</a>
-			      			<a href="#">Contact Us</a>
-			      			<a href="#">Give us Feedback</a>
-
-			      		</div>
-			     		 
-			     		 <div class="col-md-2 footer-links">
-							 <h4>Social Networking</h4>
-                             <!-- Add font awesome icons -->
-					<a href="#" class="fa fa-facebook"></a>	
-					<a href="#" class="fa fa-twitter"></a>
-					<a href="#" class="fa fa-google"></a>
-					<a href="#" class="fa fa-linkedin"></a>
-					<a href="#" class="fa fa-youtube"></a>
-					<a href="#" class="fa fa-instagram"></a>
-                
-                    <style>
-.fa {
-   padding: 20px;
-  font-size: 15px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+				<?php 
 
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
- </style>
-
-			     		 </div>
-			     		
-			     		 
-		       		</div>
-  	</footer>				
-		  </div>
+				//it will display de footer
+				footer();
+			?>
 	</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 		<script src="js/jquery-1.11.3.min.js"></script> 
