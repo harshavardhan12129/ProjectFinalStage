@@ -3,6 +3,7 @@
 
 	function navigation_bar()
 	{
+		session_start();
 		print '	<nav class="navbar navbar-default navbar-fixed-top">'	;
 		print '		<div class="container-fluid"> ';
 		print '			<div class="navbar-header">';
@@ -30,8 +31,13 @@
 		print '				 	 </li>';
 		print '				</ul>';
 		print '				<div class="btn-toolbar" role="toolbar" id="btn-toolbar-login-signup">';
-
-		session_start();
+		/*if(session_id() == '') {
+    		session_start();
+		}
+		if (session_status() == PHP_SESSION_NONE) {
+			session_start();
+		}*/
+		
 		if (isset($_SESSION['valid_user']))
 		{
 		
