@@ -21,6 +21,7 @@ ALTER TABLE Category ADD CONSTRAINT Category_PK PRIMARY KEY ( Category_id ) ;
 CREATE TABLE Contact_us
   (
     Id       NUMBER NOT NULL ,
+    Name     Varchar2 (50),
     Email    VARCHAR2 (200) ,
     Subject  VARCHAR2 (200) ,
     Comments VARCHAR2 (2000)
