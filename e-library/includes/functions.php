@@ -64,6 +64,7 @@
 	} 
 
 
+	
 	function display_results($conn, $sql,$search_text){
 			
 
@@ -99,6 +100,7 @@
 			
 			$resource_short_dsc = $row["RESOURCE_SHORT_DSC"];
 			$resource_short_dsc = str_ireplace($search_text,'<mark>'.$search_text.'</mark>',$resource_short_dsc);
+			$href = $row["RESOURCE_URL"] ;
 			print '<div class="row">';
 			print '	<div class="sixtyPercDiv">' 	;
 			print '		<ul class="media-list results">';
@@ -112,7 +114,7 @@
 			print '				</a>';
 			print '			</div>';
 			print '			<div class="media-body">';
-			print '					<h4 class="media-heading"><a href="https://www.pluralsight.com/courses/html-fundamentals" target="_blank">'. $Resource_name.'</a>'.$Resource_access.'</h4>'.$resource_short_dsc;
+			print '					<h4 class="media-heading"><a href="'.$href.'" target="_blank">'. $Resource_name.'</a>'.$Resource_access.'</h4>'.$resource_short_dsc;
 			print '				</div>';
 			print '			</li>';
 			print '		</ul>';
@@ -126,6 +128,7 @@
 		oci_close($conn);
 		
 	}
+	
 		
 function display_resources(){
 		//make the database connection
