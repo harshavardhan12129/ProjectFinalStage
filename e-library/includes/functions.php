@@ -19,7 +19,12 @@
 										$sql = oci_parse($conn,'Select CATEGORY_ID, CATEGORY_NAME FROM category');
 										oci_execute($sql);
 										while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
-											echo '<li><a href="#" id="'.$row["CATEGORY_ID"].'" onClick="nav_category_id_selected('.$row["CATEGORY_ID"].')">'.$row["CATEGORY_NAME"].'</a></li>';
+											$catid = $row["CATEGORY_ID"];
+											$catname = $row["CATEGORY_NAME"];
+											$href = 'category_index.php?catid='.$catid.'&catname='.$catname ; 
+											echo '<li><a href="'.$href.'" id="'.$row["CATEGORY_ID"].'" onClick="nav_category_id_selected('.$row["CATEGORY_ID"].')">'.$row["CATEGORY_NAME"].'</a></li>';
+											
+											//echo "<li><a href='category_index.php?catid=$catid&catname=$catname' id='".$row["CATEGORY_ID"].'" onClick="nav_category_id_selected('.$row["CATEGORY_ID"].')">'.$row["CATEGORY_NAME"].'</a></li>';
 										}												
 		print '						</ul>';
 		print '				 	 </li>';
@@ -121,12 +126,12 @@
 		oci_close($conn);
 		
 	}
-	
+		
 function display_resources(){
 		//make the database connection
 		$conn = db_connect();
 
-		$sql_str = "select RESOURCE_NAME from resources " ;
+		$sql_str = "select RESOURCE_NAME, RESOURCE_URL from resources " ;
 		$sql = oci_parse($conn,$sql_str);
 		oci_execute($sql);
 
@@ -139,7 +144,7 @@ function display_resources(){
 					print '<div class="col-md-4">';
 					print ' 	<ul>';
 				};		
-				print '	<li><a href="#">'.$row["RESOURCE_NAME"].'</a></li>';
+				print '	<li><a href="'.$row["RESOURCE_URL"].'">'.$row["RESOURCE_NAME"].'</a></li>';
 				if ($count=2){
 					print'  	</ul>';
 					print'  </div>';
@@ -156,7 +161,7 @@ function display_new_topics(){
 		//make the database connection
 		$conn = db_connect();
 
-		$sql_str = "SELECT RESOURCE_NAME,RESOURCE_SHORT_DSC FROM resources  WHERE rownum <= 6 ORDER BY RESOURCE_ID desc" ;
+		$sql_str = "SELECT RESOURCE_NAME,RESOURCE_SHORT_DSC,RESOURCE_URL FROM resources  WHERE rownum <= 6 ORDER BY RESOURCE_ID desc" ;
 		$sql = oci_parse($conn,$sql_str);
 		oci_execute($sql);
 
@@ -167,10 +172,10 @@ function display_new_topics(){
 			while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
 				print '			<article class="col-sm-6 col-md-4 col-lg-4 ">';
 				print '				<div class="thumbnail">';
-				print '					<a href="#"><h3>'.$row["RESOURCE_NAME"].'</h3></a>';
+				print '					<a href="'.$row["RESOURCE_URL"].'" target="_blank"><h3>'.$row["RESOURCE_NAME"].'</h3></a>';
 				print '					<div class="caption">'	;				
 				print '						<p>'.$row["RESOURCE_SHORT_DSC"].'</p>';
-				print '						<p> <a href="#" class="btn btn-default" role="button">Explore &gt&gt</a></p>';
+				print '						<p> <a href="'.$row["RESOURCE_URL"].'"target="_blank" class="btn btn-default" role="button">Explore &gt&gt</a></p>';
 				print '					</div>';
 				print '				</div>';
 				print '			</article>';
@@ -206,12 +211,13 @@ function display_new_topics(){
 			while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
 				$catid=$row["CATEGORY_ID"];
 				$catname=$row["CATEGORY_NAME"];
+				$href = 'category_index.php?catid='.$catid.'&catname='.$catname ; 
 				print '			<article class="col-sm-6 col-md-4 col-lg-4 ">';
 				print '				<div class="thumbnail">';
 				print "					<a href='category_index.php?catid=$catid&catname=$catname'><h3>".$row["CATEGORY_NAME"]."</h3></a>";
 				print '					<div class="caption">'	;				
 				print '						<p>'.$row["CATEGORY_SHORT_DSC"].'</p>';
-				print '						<p> <a href="#" class="btn btn-default" role="button">Explore &gt&gt</a></p>';
+				print '						<p> <a href="'.$href.'" class="btn btn-default" role="button">Explore &gt&gt</a></p>';
 				print '					</div>';
 				print '				</div>';
 				print '			</article>';
@@ -223,6 +229,7 @@ function display_new_topics(){
 		oci_close($conn);
 		
 	}
+
 
 function get_user_values(){
 		//session_start();
