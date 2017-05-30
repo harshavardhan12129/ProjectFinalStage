@@ -169,17 +169,27 @@ footer {
 }
 
 
-
+.col-marg-30{
+	display: block;
+	margin-left: 20%;
+	
+}
 .circle {
-  width: 3.5em;
-  height: 3.5em;
-  border-radius: 50%;
+  width: 12em;
+  height: 12em;
+  border-radius: 120%;
   font-size: 1.5em;
   color: #fff;
-  line-height: 3.5em;
-  margin: auto;
+  line-height: 5em;
+  margin: 10% 0px 0px 30%;
   text-align: center;
-  background: #193441
+  background: #193441;
+	  
+}
+
+.form-margin-top-right{
+	display: block;
+	margin: 10% 30% 0px 0px;
 }
 
 .circleSmallFont {
@@ -189,9 +199,8 @@ footer {
   font-size: 1em;
   color: #fff;
   line-height: 3em;
-  margin: auto;
   text-align: center;
-  background: #193441
+  background: #193441;
 }
 
 
