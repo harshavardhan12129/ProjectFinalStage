@@ -87,7 +87,8 @@
   <li><a href="#">SignUp</a></li>
  
 </ol>
-			<form action="registration_process_oracle.php" method="post">
+
+<form action="signup_process_oracle.php" method="post">
  <table border="0">
 	<tr>
     	<td align="right">* Name:</td>
