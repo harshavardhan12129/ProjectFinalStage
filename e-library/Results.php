@@ -78,7 +78,7 @@
 						//make the database connection
 						$conn = db_connect();
 						
-						$sql_str = "SELECT RESOURCE_NAME, RESOURCE_SHORT_DSC, RESOURCE_THUMBNAIL , RESOURCE_ACCESS, SOURCE,TYPE_DSC,count(*) over (partition by 1) QTY
+						$sql_str = "SELECT RESOURCE_NAME, RESOURCE_SHORT_DSC,RESOURCE_URL, RESOURCE_THUMBNAIL , RESOURCE_ACCESS, SOURCE,TYPE_DSC,count(*) over (partition by 1) QTY
 									FROM RESOURCES r, CATEGORY c , TYPE T
 									WHERE c.category_id = r.category_id
 									and r.type_id = t.type_id" ;
@@ -97,38 +97,7 @@
 					}				
 				?>		
 
-			<nav aria-label="...">
-				<ul class="pagination" id="marginPagination">
-					<li class="disabled">
-						<span>
-							<span aria-hidden="true">&laquo;</span>
-						</span>
-					</li>
-					<li class="active">
-					  <span>1 <span class="sr-only">(current)</span></span>
-					</li>
-					<li class="enable">
-						<span>2 <span class="sr-only">(disabled)</span></span>
-					</li>
-					<li class="enable">
-						<span>3 <span class="sr-only">(disabled)</span></span>
-					</li>
-						<li class="enable">
-						<span>4 <span class="sr-only">(disabled)</span></span>
-					</li>
-						<li class="enable">
-						<span>5 <span class="sr-only">(disabled)</span></span>
-					</li>
-						<li class="enable">
-						<span>6 <span class="sr-only">(disabled)</span></span>
-					</li>
-					  <li class="disabled">
-					  <span>
-						<span aria-hidden="true">&raquo;</span>
-					  </span>
-					</li>
-				</ul>
-			</nav>
+
 			<?php footer() ?>
 		</div>
 			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
