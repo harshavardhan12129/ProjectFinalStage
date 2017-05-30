@@ -39,7 +39,8 @@ CREATE TABLE RESOURCES
     resource_views      NUMBER ,
     RESOURCE_THUMBNAIL  BLOB,
     Category_id         NUMBER NOT NULL ,
-    Type_id             NUMBER NOT NULL 
+    Type_id             NUMBER NOT NULL ,
+    resource_url varchar2(200)
   ) ;
 ALTER TABLE RESOURCES ADD CONSTRAINT Resource_PK PRIMARY KEY ( Resource_id ) ;
 
