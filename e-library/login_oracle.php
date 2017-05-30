@@ -63,7 +63,7 @@
 <?php
 //must appear BEFORE the <html> tag
 session_start();
-include_once('config_oracle.php');	
+include_once('includes/functions.php');	
 
 if( isset($_POST["email"])&& isset($_POST["email"]) )
 {
@@ -82,20 +82,26 @@ if( isset($_POST["email"])&& isset($_POST["email"]) )
 	  $sql_str = "select * from users where email='$email' and password='$password'";
 	  $sql = oci_parse($conn, $sql_str);
 	  oci_execute($sql);
-
+    	
 	  $numOfRows = oci_fetch_all($sql, $res);
 	  
 	  if ($numOfRows)
 	  {
 		// login successfully, keep the user's email
+		
 		$_SESSION['valid_user'] = $email;
+		//$row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS);
+	   //$_SESSION['name'] = $row["NAME"];
+	
+		
 	  }
 	  oci_close($conn);
 	}
 }
 if (isset($_SESSION['valid_user']))
 {
-  header("location: members_only_oracle.php");  
+  header("location: index.php");  
+	//print_r($_SESSION);
 }
 else
 {
@@ -226,12 +232,3 @@ else
 		<script src="js/bootstrap.js"></script>
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
