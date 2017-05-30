@@ -53,10 +53,13 @@ ALTER TABLE Type ADD CONSTRAINT Type_PK PRIMARY KEY ( Type_id ) ;
 create table users
 (
   name varchar2(50) not null ,
+   mobile number(8,2) ,
+  Firstname char(30) ,
   email varchar2(50) primary key,
   password varchar2(30) not null,
   photo blob null,
   user_id number not null UNIQUE
+  
 );
 
 
@@ -70,7 +73,8 @@ CREATE UNIQUE INDEX IDX_NAME_UNQ ON CATEGORY (CATEGORY_NAME ASC);
 CREATE UNIQUE INDEX IDX_RES_NAME_UNQ ON RESOURCES (RESOURCE_NAME ASC);
 CREATE UNIQUE INDEX IDX_DSC_UNQ ON TYPE (TYPE_DSC ASC);
 
-
+DROP SEQUENCE user_seq;
+CREATE SEQUENCE user_seq INCREMENT BY 1 NOCACHE NOCYCLE;
 
 create or replace trigger insert_user_id 
 before insert 
