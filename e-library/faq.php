@@ -73,7 +73,7 @@ There are some titles in the Overdrive collection called Overdrive Read which ca
 
 
 
-<br>
+
 <h1 style="text-align:center;">How can i Visit?</h1>
 <p style="text-align:center;">Speak to a librarian in one of our reading rooms.
 
@@ -90,9 +90,7 @@ Or Book a Librarian to make an appointment with a librarian or curator for profe
 
 
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-   /><br /><br /><br />
-   
+
 
 
 
