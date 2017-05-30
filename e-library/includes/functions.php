@@ -25,17 +25,39 @@
 		print '				 	 </li>';
 		print '				</ul>';
 		print '				<div class="btn-toolbar" role="toolbar" id="btn-toolbar-login-signup">';
-		print '					<div class="btn-group" role="group">';
-		print '						<a href="../Login.html" type="button" class="btn btn-default">Login</a>';
-		print '					</div>';
-		print '					<div class="btn-group" role="group">';
-		print '					  <a href="../SignUp.html"  type="button" class="btn btn-primary">Sign Up</a>';
-		print '					</div>';
+
+		session_start();
+		if (isset($_SESSION['valid_user']))
+		{
+		
+			print '			<div class="dropdown">';
+			print '				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">';
+			print				$_SESSION['valid_user'];
+			print '					<span class="caret"></span>';
+			print '		  		</button>';
+			print '			  	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">';
+			print '					<li><a href="Profile.php">Profile</a></li>';
+			print '					<li><a href="logout_oracle.php">Logout</a></li>';
+			print '				</ul>';
+			print '			</div>	 '; 	
+							
+		}else{
+			print '				<div class="btn-group" role="group">';
+			print '					<a href="login_oracle.php" type="button" class="btn btn-default">Login</a>';
+			print '				</div>';
+			print '			<div class="btn-group" role="group">';
+			print '				 <a href="SignUp.php"  type="button" class="btn btn-primary">Sign Up</a>';
+			print '			</div>';
+		
+		}
+
+
 		print '				</div>';
 		print '			</div>';
 		print '		</div>';
 		print '	</nav>';
 	} 
+
 
 	function display_results($conn, $sql,$search_text){
 			
@@ -165,12 +187,12 @@ function display_new_topics(){
 		//make the database connection
 		$conn = db_connect();
 
-		$sql_str = "SELECT category_name, category_short_dsc
+		$sql_str = "SELECT category_name, category_short_dsc,CATEGORY_ID
 					from (
-					SELECT category_name, category_short_dsc
+					SELECT category_name, category_short_dsc,c.category_id
 					FROM category c
 					INNER JOIN RESOURCES r ON c.category_id = r.category_id					
-					GROUP BY category_name,category_short_dsc
+					GROUP BY category_name,category_short_dsc,c.CATEGORY_ID
 					ORDER BY sum(r.resource_views) desc
 					)
 					WHERE rownum <= 6" ;
@@ -182,9 +204,11 @@ function display_new_topics(){
 			print '	<div class="col-lg-10 col-lg-offset-1">';
 			print '		<div class="row">';
 			while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
+				$catid=$row["CATEGORY_ID"];
+				$catname=$row["CATEGORY_NAME"];
 				print '			<article class="col-sm-6 col-md-4 col-lg-4 ">';
 				print '				<div class="thumbnail">';
-				print '					<a href="#"><h3>'.$row["CATEGORY_NAME"].'</h3></a>';
+				print "					<a href='category_index.php?catid=$catid&catname=$catname'><h3>".$row["CATEGORY_NAME"]."</h3></a>";
 				print '					<div class="caption">'	;				
 				print '						<p>'.$row["CATEGORY_SHORT_DSC"].'</p>';
 				print '						<p> <a href="#" class="btn btn-default" role="button">Explore &gt&gt</a></p>';
@@ -199,6 +223,117 @@ function display_new_topics(){
 		oci_close($conn);
 		
 	}
+
+function get_user_values(){
+		//session_start();
+		if (isset($_SESSION['valid_user']))
+		{
+			//make the database connection
+			$conn = db_connect();
+
+			$sql_str = "select NAME,EMAIL,PHOTO,USER_ID
+						from users" ;
+
+			$sql_str = $sql_str." where email = '".$_SESSION['valid_user']."'";
+
+			$sql = oci_parse($conn,$sql_str);
+			oci_execute($sql);
+	
+			while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
+				$name=$row["NAME"];
+				$user=$row["EMAIL"];
+				$id=$row["USER_ID"];											
+			}
+
+			//close db connection
+			oci_close($conn);
+			return array($id,$name,$user);
+		}else{
+			echo 'You must be logged in to see your profile.';
+		}
+
+	}
+	function display_user_profile(){
+		//session_start();
+		if (isset($_SESSION['valid_user']))
+		{
+			//make the database connection
+			$conn = db_connect();
+
+			$sql_str = "select NAME,EMAIL,PHOTO,USER_ID
+						from users" ;
+
+			$sql_str = $sql_str." where email = '".$_SESSION['valid_user']."'";
+
+			$sql = oci_parse($conn,$sql_str);
+			oci_execute($sql);
+	
+			while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
+				$name=$row["NAME"];
+				$user=$row["EMAIL"];
+				$id=$row["USER_ID"];?>
+				<div class="row">
+					<?php	
+					if (isset($row['PHOTO'])) { ?>
+					<div class="col-md-6">
+						<?php $img = oci_lob_load($row["PHOTO"]);
+						echo '<img class="circle" alt="..." 	src="data:image/jpeg;base64,'.base64_encode($img).' "/>';?>
+					</div>
+					<?php } ?>
+
+					<div class="col-md-6">
+						<form class="panel panel-default form-margin-top-right" action="Profile.php" method="POST">
+							<div class="panel-heading">Profile Details</div>
+							<div>
+								<div class="panel-body">
+									  <div>
+											<div class="input-group">
+												<div class="col-md-4">
+													<p>User Name</p>							  
+												</div>
+												<div class="col-md-8">
+													<input type="text" id="NAME" class="form-control" placeholder="User Name" name="NAME" aria-describedby="addon1" value="<?php echo $row["NAME"] ?>">
+												</div>
+											</div> 
+									  </div>
+									<br> 
+									 <div>
+										<div class="input-group">
+											<div class="col-md-4">
+												<p>Email</p>
+											</div>
+											<div class="col-md-8">
+													<input type="text" class="form-control" placeholder="Email" aria-describedby="addon1"  disabled value="<?php echo $row["EMAIL"] ?>">
+											</div>
+										</div> 
+
+									 </div> 
+									<div class="btn-group" role="group">
+									  <input type="submit" class="btn btn-primary" name="update" value="update">
+									  
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<?php
+				
+			}
+			//close db connection
+			oci_close($conn);
+	
+		}else{
+			echo 'You must be logged in to see your profile.';
+		}
+
+	}
+	function display_resources_into_categories($conn, $sql){
+		while (($row = oci_fetch_array($sql,OCI_ASSOC+ OCI_RETURN_NULLS))!= false){
+			echo "<p>".$row["RESOURCE_NAME"]."</p><br/>";
+		}
+	}
+
 
 
 	function footer(){
