@@ -53,8 +53,6 @@ ALTER TABLE Type ADD CONSTRAINT Type_PK PRIMARY KEY ( Type_id ) ;
 create table users
 (
   name varchar2(50) not null ,
-   mobile number(8,2) ,
-  Firstname char(30) ,
   email varchar2(50) primary key,
   password varchar2(30) not null,
   photo blob null,
