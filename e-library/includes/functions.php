@@ -375,7 +375,7 @@ function get_user_values(){
 		print '			     		 </div>';
 		print '			     		 <div class="col-md-2  col-lg-2 col-sm-2 footer-links">';
 		print '			     		 	<h4><strong>About us</strong></h4>';
-		print '			     		 	<a href="../AboutUs">About Us</a>';
+		print '			     		 	<a href="About_us.html">About Us</a>';
 		print '			     		 	<a href="#">Subscribe as a teacher</a>';
 		print '			     		 </div>';
 		print '			      		<div class="col-md-2 col-lg-2 col-sm-2 footer-links">';
@@ -440,7 +440,7 @@ function get_user_values(){
 		print '									<li id="copyRight">© 2017 IT Library group</li>';
 		print '										<li><a class="ga" href="../sitemap.html" data-ga-category="footer" data-ga-action="click" data-ga-label="sitemap" data-qa="link-site-map">Site Map</a></li>';
 		print '									<li><a class="ga" href="#" data-ga-category="fat-footer" data-ga-action="click" data-ga-label="privacy-policy" data-qa="link-privacy-policy">Privacy policy</a></li>';
-		print '									<li><a class="ga" href="#" data-ga-category="footer" data-ga-action="click" data-ga-label="web-use-policy" data-qa="link-website-use">Web Use Policy</a></li>';
+		print '									<li><a class="ga" href="webpolicy.html" data-ga-category="footer" data-ga-action="click" data-ga-label="web-use-policy" data-qa="link-website-use">Web Use Policy</a></li>';
 		print '								</ul>';
 		print '							</div>';
 		print '						</div>';
@@ -448,6 +448,7 @@ function get_user_values(){
 		print '			  	</footer>	';			
 		print '			</div>';
 	}
+
 
 
 
