@@ -60,7 +60,7 @@
   <li><a href="index.html">Home</a></li>
   <li><a href="#">Login</a></li>
 <?php
-include_once('config_oracle.php');
+include_once('includes/functions.php');
 
 if(isset($_POST['name'], $_POST['email'], $_POST['password'])) {
 	$name = $_POST['name'];
