@@ -15,14 +15,14 @@
 	</head>
   
 	<body style="padding-top: 50px">
-	<!--<p id="search_category"> </p>-->
-	 
-		<div id="script">
+	<!--<p id="search_category"> </p>-->	
+	
 		<?php 
+	
 			echo navigation_bar();
 			
 		?>
-		</div>
+		
 		<div class="container-fluid">
 			<div class="row" id="principalImage">
 				<form method=post action="Results.php">
