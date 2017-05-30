@@ -97,10 +97,10 @@
 		</div>
 	</div>
 </form>                 
-
-<div class="map-responsive">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.0859415295836!2d153.0271855145282!3d-27.466583682892264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a1d064dcb2f%3A0x7f3aed61f0bfd9e3!2sJames+Cook+University%2C+Brisbane+Campus!5e0!3m2!1sen!2sau!4v1496181015965" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
+div class="map-responsive" align="right" >
+   <div class="col-sm-1 col-sm-offset-2">
+    <iframe width="400" height="350" frameborder="3" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.0859415295836!2d153.0271855145282!3d-27.466583682892264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a1d064dcb2f%3A0x7f3aed61f0bfd9e3!2sJames+Cook+University%2C+Brisbane+Campus!5e0!3m2!1sen!2sau!4v1496181015965"></iframe><br /><small><a href="LINK" style="color:#fff;text-align:right">View Larger Map</a></small>
+</div>
 <!-- Code for Contact Us page (End) -->  
 
 <?php
