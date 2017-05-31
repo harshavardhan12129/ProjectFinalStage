@@ -1,8 +1,8 @@
 <?php
 //define constants for connection info
-define("ORACLEUSER","TEAM052017");
-define("ORACLEPASS","oracle");
-define("ORACLEDB","192.168.56.101/orcl");
+define("ORACLEUSER","team05mar17");
+define("ORACLEPASS","oracle_team05");
+define("ORACLEDB","10.250.0.7/xe");
 //define("ORACLEDB","192.168.56.101/orcl12c");
 
 //make connection to database
