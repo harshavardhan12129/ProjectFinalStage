@@ -375,7 +375,7 @@ function get_user_values(){
 		print '			     		 </div>';
 		print '			     		 <div class="col-md-2  col-lg-2 col-sm-2 footer-links">';
 		print '			     		 	<h4><strong>About us</strong></h4>';
-		print '			     		 	<a href="About_us.html">About Us</a>';
+		print '			     		 	<a href="About_us.php">About Us</a>';
 		print '			     		 	<a href="#">Subscribe as a teacher</a>';
 		print '			     		 </div>';
 		print '			      		<div class="col-md-2 col-lg-2 col-sm-2 footer-links">';
@@ -383,7 +383,8 @@ function get_user_values(){
 		print '			      			<a href="#">Support</a>';
 		print '			      			<a href="#">Help</a>';
 		print '			      			<a href="../ContactUs.html">Contact Us</a>';
-		print '			      			<a href="feedback.html">Give us Feedback</a>';
+		print '			      			<a href="feedback.php">Give us Feedback</a>';
+		print '			      			<a href="faq.php">FAQs</a>';
 		print '			      		</div>			     		 ';
 		print '			     		 <div class="col-md-2 col-lg-2 col-sm-2 footer-links">';
 		print '							<h4><strong>Social Networking</strong></h4>';
@@ -438,9 +439,9 @@ function get_user_values(){
 		print '							<div class="col-sm-7 col-lg-9">';
 		print '								<ul class="footer-IT-Library">';
 		print '									<li id="copyRight">© 2017 IT Library group</li>';
-		print '										<li><a class="ga" href="../sitemap.html" data-ga-category="footer" data-ga-action="click" data-ga-label="sitemap" data-qa="link-site-map">Site Map</a></li>';
+		print '										<li><a class="ga" href="sitemap.php" data-ga-category="footer" data-ga-action="click" data-ga-label="sitemap" data-qa="link-site-map">Site Map</a></li>';
 		print '									<li><a class="ga" href="#" data-ga-category="fat-footer" data-ga-action="click" data-ga-label="privacy-policy" data-qa="link-privacy-policy">Privacy policy</a></li>';
-		print '									<li><a class="ga" href="webpolicy.html" data-ga-category="footer" data-ga-action="click" data-ga-label="web-use-policy" data-qa="link-website-use">Web Use Policy</a></li>';
+		print '									<li><a class="ga" href="webpolicy.php" data-ga-category="footer" data-ga-action="click" data-ga-label="web-use-policy" data-qa="link-website-use">Web Use Policy</a></li>';
 		print '								</ul>';
 		print '							</div>';
 		print '						</div>';
